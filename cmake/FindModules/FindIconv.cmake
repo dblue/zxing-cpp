@@ -48,7 +48,9 @@ _iconv_find()
 
 if(ICONV_FOUND)
   if(NOT ICONV_FIND_QUIETLY)
+    message(STATUS "Found iconv root: ${ICONV_ROOT}")
     message(STATUS "Found iconv library: ${ICONV_LIBRARY}")
+    message(STATUS "Found iconv headers: ${ICONV_INCLUDE_DIR}")
   endif()
 
   if(HAVE_ICONV_IN_LIBC)
